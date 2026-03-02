@@ -1,0 +1,120 @@
+/**
+ * GosselinGourmet.css
+ *
+ * Stylesheet for the Gosselin Gourmet Coffee online store application.
+ * This file defines the visual presentation, typography, and layout for
+ * the main product listing and checkout pages.
+ *
+ * Author: Gabriel Zayas
+ * Date: 10/30/2024
+ * Assignment: Exercise 10-1 to 10-3 | GosselinGourmet.css
+ */
+
+/* --- GENERAL BODY AND TEXT STYLES --- */
+
+body {
+     /* Base text color (very dark blue/indigo). */
+     color:#000020; 
+     
+     /* Use a default serif font for readability. */
+     font-family:serif; 
+     
+     /* Set the background to solid white. */
+     background-color:#FFFFFF;
+}
+
+p {
+     /* Indent standard paragraph text for better visual separation. */
+     margin-left:20px;
+}
+
+/* Style for all headings and table elements (headings, cells). */
+h1, h2, th, td {
+     /* A slightly darker blue for headings and table elements for visual emphasis. */
+     color:#000040;
+}
+
+/* --- HEADING AND TABLE HEADER STYLES --- */
+
+/* Shared alignment and weight for main headings and table column headers. */
+h1, h2, th {
+     /* Center the text within the element. */
+     text-align:center; 
+     
+     /* Ensure text is bold. */
+     font-weight:bold; 
+}
+
+h1 {
+     /* Adds an underline for the main page title. */
+     text-decoration:underline; 
+     
+     /* Uses small-caps typography for a stylized title look. */
+     font-variant:small-caps; 
+}
+
+h2 {
+     /* Styles subtitles with an italic font. */
+     font-style:italic; 
+}
+
+/* --- TABLE STYLES (PRODUCT LIST) --- */
+
+/* Apply borders to all table elements (table container, headers, data cells). */
+table, th, td {
+     /* Set border color to a dark cyan/teal. */
+     border-color:#008080;
+     
+     /* Use solid lines for borders. */
+     border-style:solid;
+     
+     /* Default border thickness. */
+     border-width:1px;
+}
+
+table {
+     /* Inner padding within the table container. */
+     padding:2px; 
+     
+     /* Thicker border around the entire table boundary. */
+     border-width:2px; 
+     
+     /* Outer margin for positioning the table away from other content. */
+     margin:10px; 
+     
+     /* Borders are separated (not collapsed into a single line). */
+     border-collapse:separate;
+     
+     /* Spacing between separated borders. */
+     border-spacing:3px;
+}
+
+th {
+     /* Generous padding for content inside table headers. */
+     padding:10px; 
+     
+     /* Light cyan background for table headers to distinguish them. */
+     background-color:#C0FFFF; 
+}
+
+td {
+     /* Generous padding for content inside table data cells. */
+     padding:10px; 
+     
+     /* Slightly lighter cyan background for standard data cells. */
+     background-color:#E0FFFF; 
+}
+
+/* --- CURRENCY CLASS --- */
+
+/* Specific class applied to cells displaying monetary values. */
+.currency {
+    /* Align currency values to the right for easy reading/comparison. */
+    text-align:right;
+    
+    /* Use a fixed-width (monospaced) font for consistent digit alignment. */
+    font-family:monotype;
+    
+    /* Ensure the style is regular (not italic, even if inherited). */
+    font-style:normal; 
+}

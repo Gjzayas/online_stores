@@ -1,0 +1,115 @@
+/**
+ * ElectronicsBoutique.css
+ *
+ * Stylesheet for the Electronics Boutique online store.
+ * This file defines the blue-themed visual presentation, typography, and
+ * table structure specific to the electronics catalog and shopping cart.
+ *
+ * @author Gabriel Zayas
+ * @version 1.0
+ */
+
+/* --- GENERAL BODY AND TEXT STYLES --- */
+
+body {
+     /* Base text color set to a vibrant blue. */
+     color:#0000FF; 
+
+     /* Use a default sans-serif font for a modern look. */
+     font-family:sans-serif; 
+
+     /* Set the background to a light lavender/ghost white for contrast. */
+     background-color:#F8F8FF;
+
+     /* Apply small-caps typography to the body text. */
+     font-variant:small-caps; 
+}
+
+p {
+     /* Indent standard paragraph text for visual structure. */margin-left:20px;
+}
+
+/* Style for all headings and table elements (headings, cells). */
+h1, h2, th, td {
+     /* Set primary color for headings and table content to dark blue/navy. */
+     color:#000080;
+}
+
+/* --- HEADING STYLES --- */
+
+/* Shared properties for main headings and table headers. */
+h1, h2, th {
+     /* Center the text within the element. */
+     text-align:center;
+     
+     /* Ensure text is bold. */
+     font-weight:bold; 
+}
+
+h1 {
+     /* Adds an underline for the main page title. */
+     text-decoration:underline; 
+}
+
+h2 {
+     /* Styles subtitles with an italic font. */
+     font-style:italic; 
+}
+
+/* --- TABLE STRUCTURE AND BORDERS --- */
+
+/* Apply borders to all table elements (container, headers, data cells). */
+table, th, td {
+     /* Set border color to the same dark blue/navy as headings. */
+     border-color:#000080;
+
+     /* Use solid lines for borders. */
+     border-style:solid;
+
+     /* Default border thickness. */
+     border-width:1px;
+}
+
+table {
+     /* Inner padding within the table container. */
+     padding:10px;
+     
+     /* Thicker border around the entire table boundary. */
+     border-width:5px;
+     
+     /* Outer margin for positioning. */
+     margin:10px; 
+
+     /* Collapse borders into a single, neat line. */
+     border-collapse:collapse;
+}
+
+th {
+     /* Light slate blue background for table headers. */
+     background-color:#C0C0FF; 
+
+     /* Make the bottom border of the header thicker for visual separation from data rows. */
+     border-bottom-width:5px;
+}
+
+td {
+     /* Very light blue background for standard data cells. */
+     background-color:#F0F0FF; 
+
+     /* Slightly thicker bottom border for data rows. */
+     border-bottom-width:3px;
+}
+
+/* --- CURRENCY CLASS --- */
+
+/* Specific class applied to cells displaying monetary values. */
+.currency {
+     /* Align currency values to the right for easy readability. */
+     text-align:right;
+     
+     /* Use a fixed-width (monospaced) font for consistent digit alignment. */
+     font-family:monotype;
+
+     /* Ensure the style is regular (not italic). */
+     font-style:normal; 
+}

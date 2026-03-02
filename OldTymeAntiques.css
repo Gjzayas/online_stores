@@ -1,0 +1,87 @@
+/**
+ * OldTymeAntiques.css
+ *
+ * Stylesheet for the Old Tyme Antiques online store.
+ * This file defines a classic, aged, and stylized visual theme using
+ * specific color palettes and cursive/script fonts to match the store's
+ * antique focus. Notably, it removes standard table borders for a cleaner,
+ * less structured layout.
+ *
+ * @author Gabriel Zayas
+ * @version 1.0
+ */
+
+/* --- GENERAL BODY AND TEXT STYLES --- */
+
+body {
+     /* Base text color set to a warm, dark brown/sepia tone. */
+     color:#403010; 
+     
+     /* Primary font stack uses decorative cursive/script fonts for a vintage feel. */
+     font-family:"Lucida Calligraphy", "Brush Script MT", "English 157 BT", cursive; 
+     
+     /* Light beige/antique white background color to mimic old paper. */
+     background-color:#FFF0D0;
+
+     /* Applies italic style across all body text. */
+     font-style:italic; 
+}
+
+p {
+     /* Indent standard paragraph text for visual structure. */
+     margin-left:20px;
+}
+
+/* Style for all headings and table elements (headings, cells). */
+h1, h2, th, td {
+     /* Set primary color for headings and table content to match the body text (dark brown). */
+     color:#403010;
+}
+
+/* --- HEADING STYLES --- */
+
+/* Shared properties for main headings and table headers. */
+h1, h2, th {
+     /* Center the text within the element. */
+     text-align:center; 
+
+     /* Ensure text is bold for readability despite the decorative font. */
+     font-weight:bold; 
+}
+
+/* --- TABLE STRUCTURE (Clean, borderless layout) --- */
+
+/* Explicitly remove all borders from table elements to achieve an antique/unframed look. */
+table, th, td {
+     border-style:none;
+}
+
+table {
+     /* Generous inner padding around the table content. */
+     padding:10px; 
+
+     /* Outer margin for positioning. */
+     margin:10px; 
+
+     /* Aligns table content to the top. */
+     vertical-align:top;
+}
+
+td {
+     /* Ensures data cells align content to the top, common for product descriptions. */
+     vertical-align:top;
+}
+
+/* --- CURRENCY CLASS --- */
+
+/* Specific class applied to cells displaying monetary values. */
+.currency {
+     /* Align currency values to the right for easy readability. */
+     text-align:right;
+
+     /* Use a fixed-width (monospaced) font for consistent digit alignment. */
+     font-family:monotype;
+
+     /* Override any inherited italic style, ensuring numbers are normal for clarity. */
+     font-style:normal; 
+}
